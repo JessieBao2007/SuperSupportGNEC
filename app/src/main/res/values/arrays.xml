@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_items">
+        <item>Select</item>
+        <item>D-Deny</item>
+        <item>A-Attack</item>
+        <item>RVO-Reverse Victim and Offender</item>
+    </string-array>
+
+
+
+    <string-array name="spinner_items2">
+        <item>Select</item>
+        <item>Sexual Assault</item>
+        <item>Physical Assault</item>
+        <item>Sexual Harassment</item>
+        <item>Neglect</item>
+    </string-array>
+</resources>

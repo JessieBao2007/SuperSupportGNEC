@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0622"
+    tools:context=".level2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="SuperSupport"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_block"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/manipulatesection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="People also have emotional boundaries. If someone makes you feel worthless, if they talk to you disrespectfully, if they trick, threaten, or manipulate you into doing something, that is emotional abuse. Choose the images which depicts emotional abuse."
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="69dp">
+
+                        <ImageButton
+                            android:id="@+id/manipulatebtn"
+                            android:layout_width="209dp"
+                            android:layout_height="211dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/manipulate"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/manipulatetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@id/manipulatebtn"
+                            app:layout_constraintEnd_toEndOf="@+id/manipulatebtn"
+                            app:layout_constraintStart_toStartOf="@id/manipulatebtn"
+                            app:layout_constraintTop_toTopOf="@+id/manipulatebtn" />
+
+
+                        <ImageButton
+                            android:id="@+id/notmanipulatebtn"
+                            android:layout_width="209dp"
+                            android:layout_height="211dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/notmanipulate"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/manipulatebtn"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/notmanipulatetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@id/notmanipulatebtn"
+                            app:layout_constraintEnd_toEndOf="@id/notmanipulatebtn"
+                            app:layout_constraintStart_toEndOf="@+id/manipulatebtn"
+                            app:layout_constraintTop_toTopOf="@+id/notmanipulatebtn" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+                        android:id="@+id/manipulatetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Correct! This individual is trying to manipulate and gaslight the other that they did not cheat."
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+                        android:gravity="center_horizontal"
+                        android:visibility="invisible"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/emosection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/manipulatesection">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Sometimes emotional abusers will attempt to make themselves seem like they are actually the ones being hurt. Which pictures show an image of an abuser trying to be the victim."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                        <ImageButton
+                            android:id="@+id/emo1btn"
+                            android:layout_width="197dp"
+                            android:layout_height="204dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/emo2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/emo1text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/emo1btn"
+                            app:layout_constraintEnd_toEndOf="@+id/emo1btn"
+                            app:layout_constraintStart_toStartOf="@+id/emo1btn"
+                            app:layout_constraintTop_toTopOf="@+id/emo1btn" />
+
+                        <ImageButton
+                            android:id="@+id/notemo1btn"
+                            android:layout_width="193dp"
+                            android:layout_height="206dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/emo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/emo1btn"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/notemo1text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/notemo1btn"
+                            app:layout_constraintEnd_toEndOf="@+id/notemo1btn"
+                            app:layout_constraintStart_toStartOf="@+id/notemo1btn"
+                            app:layout_constraintTop_toTopOf="@+id/notemo1btn" />
+
+
+                        <ImageButton
+                            android:id="@+id/notemo2btn"
+                            android:layout_width="196dp"
+                            android:layout_height="191dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/notemotion"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/emo1btn" />
+
+                        <TextView
+                            android:id="@+id/notemo2text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/notemo2btn"
+                            app:layout_constraintEnd_toEndOf="@+id/notemo2btn"
+                            app:layout_constraintStart_toStartOf="@+id/notemo2btn"
+                            app:layout_constraintTop_toBottomOf="@+id/emo1btn" />
+
+
+                        <ImageButton
+                            android:id="@+id/emo2btn"
+                            android:layout_width="214dp"
+                            android:layout_height="207dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/emotion"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/notemo2btn"
+                            app:layout_constraintTop_toBottomOf="@+id/notemo1btn" />
+
+                        <TextView
+                            android:id="@+id/emo2text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/emo2btn"
+                            app:layout_constraintEnd_toEndOf="@+id/emo2btn"
+                            app:layout_constraintStart_toStartOf="@+id/emo2btn"
+                            app:layout_constraintTop_toBottomOf="@+id/notemo1btn" />
+
+                        <ImageButton
+                            android:id="@+id/emo3btn"
+                            android:layout_width="222dp"
+                            android:layout_height="208dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/emoabuse"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/notemo2btn" />
+
+                        <TextView
+                            android:id="@+id/emo3text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/emo3btn"
+                            app:layout_constraintStart_toStartOf="@+id/emo3btn"
+                            app:layout_constraintTop_toTopOf="@+id/emo3btn" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+                        android:id="@+id/emotext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Correct! Abusers/Manipulators will often disregard criticism and confrentations in order to make themselves the victim."
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/darvosection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/emosection">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="DARVO stands for “Deny, Attack, and Reverse Victim and Offender,” which is a consistent reaction and manipulation tactic used by abusers. D is denying wrongdoing, A is attacking the other person. RVO is reversing roles and tyring to play the victim. V is "
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/darvopic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/darvo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                    <TextView
+                        android:id="@+id/darvoasdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Pick what each picture represents in DARVO"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/darvopic" />
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/darvoasdf">
+
+                        <ImageView
+                            android:id="@+id/rvo"
+                            android:layout_width="207dp"
+                            android:layout_height="230dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/rvo"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <Spinner
+                            android:id="@+id/spinnerrvo"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/spinner_items"
+                            app:layout_constraintBottom_toTopOf="@+id/spinnerd"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.163" />
+
+                        <ImageView
+                            android:id="@+id/d"
+                            android:layout_width="207dp"
+                            android:layout_height="230dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/d"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/rvo" />
+
+
+                        <Spinner
+                            android:id="@+id/spinnerd"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="308dp"
+                            android:entries="@array/spinner_items"
+                            app:layout_constraintBottom_toTopOf="@+id/spinnera"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <ImageView
+                            android:id="@+id/a"
+                            android:layout_width="207dp"
+                            android:layout_height="230dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/a"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/d" />
+
+                        <Spinner
+                            android:id="@+id/spinnera"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="92dp"
+                            android:entries="@array/spinner_items"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+                        android:id="@+id/darvotext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="That's correct! Watch for DARVO"
+                        android:visibility="invisible"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+                    <Button
+                        android:id="@+id/backbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/darvotext" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

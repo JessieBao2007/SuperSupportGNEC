@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0622"
+    tools:context=".level1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="SuperSupport"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_block"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="154dp"
+                    android:layout_height="237dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/drawingofperson"/>
+
+                <TextView
+                    android:id="@+id/textView0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is your body. Your body has many private parts, including your mouth, chest, and butt. It's important to not let others touch your private parts without consent."
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <Button
+                    android:id="@+id/continuebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONTINUE"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/privatesection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Select all the private parts" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="420dp"
+                        android:layout_height="623dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2"
+                        tools:layout_editor_absoluteX="-2dp">
+
+                        <ImageButton
+                            android:id="@+id/legbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginEnd="260dp"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:src="@drawable/legs"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.079" />
+
+                        <TextView
+                            android:id="@+id/legtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="18sp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/legbtn"
+                            app:layout_constraintEnd_toEndOf="@+id/legbtn"
+                            app:layout_constraintStart_toStartOf="@+id/legbtn"
+                            app:layout_constraintTop_toTopOf="@+id/legbtn" />
+
+
+                        <ImageButton
+                            android:id="@+id/chestbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="260dp"
+                            android:layout_marginEnd="40dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:src="@drawable/chest"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.875"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.194" />
+
+                        <TextView
+                            android:id="@+id/chesttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="18sp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/chestbtn"
+                            app:layout_constraintEnd_toEndOf="@+id/chestbtn"
+                            app:layout_constraintStart_toStartOf="@+id/chestbtn"
+                            app:layout_constraintTop_toTopOf="@+id/chestbtn" />
+
+                        <ImageButton
+                            android:id="@+id/hairbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:scaleX="1"
+                            android:scaleY="1"
+                            android:src="@drawable/hair"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.175"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/legbtn"
+                            app:layout_constraintVertical_bias="0.04" />
+
+                        <TextView
+                            android:id="@+id/hairtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="18sp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/hairbtn"
+                            app:layout_constraintEnd_toEndOf="@+id/hairbtn"
+                            app:layout_constraintStart_toStartOf="@+id/hairbtn"
+                            app:layout_constraintTop_toTopOf="@+id/hairbtn" />
+
+
+                        <ImageButton
+                            android:id="@+id/mouthbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:scaleX="2"
+                            android:scaleY="2"
+                            android:src="@drawable/mouth"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.662"
+                            app:layout_constraintStart_toEndOf="@+id/hairbtn"
+                            app:layout_constraintTop_toBottomOf="@+id/chestbtn"
+                            app:layout_constraintVertical_bias="0.241" />
+
+                        <TextView
+                            android:id="@+id/mouthtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="18sp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/mouthbtn"
+                            app:layout_constraintEnd_toEndOf="@+id/mouthbtn"
+                            app:layout_constraintStart_toStartOf="@+id/mouthbtn"
+                            app:layout_constraintTop_toTopOf="@+id/mouthbtn" />
+
+                        <ImageButton
+                            android:id="@+id/buttbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="260dp"
+                            android:src="@drawable/butt"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/hairbtn" />
+
+                        <TextView
+                            android:id="@+id/butttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="18sp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/buttbtn"
+                            app:layout_constraintEnd_toEndOf="@+id/buttbtn"
+                            app:layout_constraintStart_toStartOf="@+id/buttbtn"
+                            app:layout_constraintTop_toTopOf="@+id/buttbtn" />
+
+                        <ImageButton
+                            android:id="@+id/handbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/hand"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.71"
+                            app:layout_constraintStart_toEndOf="@+id/buttbtn"
+                            app:layout_constraintTop_toTopOf="@+id/mouthbtn"
+                            app:layout_constraintVertical_bias="0.511" />
+
+                        <TextView
+                            android:id="@+id/handtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="18sp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/handbtn"
+                            app:layout_constraintEnd_toEndOf="@+id/handbtn"
+                            app:layout_constraintStart_toStartOf="@+id/handbtn"
+                            app:layout_constraintTop_toTopOf="@+id/handbtn" />
+
+                        <TextView
+                            android:id="@+id/privatetext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:text="Yes! These areas are your private parts. Howevere, if you ever feel uncomfortable with anyone touching your at any area, be sure to make yourself clear that you do not want to be touched"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.9" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/jimmylayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="580dp"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Someone is attempting to touch this child's privates, what should they do?"
+                        tools:layout_editor_absoluteX="20dp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="411dp"
+                        android:layout_height="449dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                        <ImageButton
+                            android:id="@+id/runbtn"
+                            android:layout_width="142dp"
+                            android:layout_height="140dp"
+                            android:scaleX="0.7"
+                            android:scaleY=".7"
+                            android:src="@drawable/run"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.059"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/jimmy"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <TextView
+                            android:id="@+id/runtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/runbtn"
+                            app:layout_constraintEnd_toEndOf="@+id/runbtn"
+                            app:layout_constraintStart_toStartOf="@+id/runbtn"
+                            app:layout_constraintTop_toTopOf="@+id/runbtn" />
+
+                        <ImageView
+                            android:id="@+id/jimmy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:src="@drawable/jimmy"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/creep"
+                            android:layout_width="194dp"
+                            android:layout_height="299dp"
+                            android:scaleX="0.9"
+                            android:scaleY="0.9"
+                            android:src="@drawable/creep"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.977"
+                            app:layout_constraintStart_toEndOf="@+id/jimmy"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                        <ImageButton
+                            android:id="@+id/sitsilentlybtn"
+                            android:layout_width="116dp"
+                            android:layout_height="137dp"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:src="@drawable/sitsilently"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/runbtn"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.958" />
+
+                        <TextView
+                            android:id="@+id/sitsilenttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/sitsilentlybtn"
+                            app:layout_constraintEnd_toEndOf="@+id/sitsilentlybtn"
+                            app:layout_constraintStart_toStartOf="@+id/sitsilentlybtn"
+                            app:layout_constraintTop_toTopOf="@+id/sitsilentlybtn" />
+
+                        <ImageButton
+                            android:id="@+id/walkawaybtn"
+                            android:layout_width="140dp"
+                            android:layout_height="145dp"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:src="@drawable/walkaway"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.796"
+                            app:layout_constraintStart_toEndOf="@+id/sitsilentlybtn"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <TextView
+                            android:id="@+id/walkawaytext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/walkawaybtn"
+                            app:layout_constraintEnd_toEndOf="@+id/walkawaybtn"
+                            app:layout_constraintStart_toStartOf="@+id/walkawaybtn"
+                            app:layout_constraintTop_toTopOf="@+id/walkawaybtn" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/jimmytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Correct! Being touched in your private parts without consent is something that is very serious! Don't be afraid to cause a commotion, for your own saftey!"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/consentsection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="Consent is when you are okay with people touching you - you must be very sure. Make sure they have good intensions, like checking your body for signs of poor health and do not overstep boundaries. Which of these pictures shows proper consent?"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+                        <ImageButton
+                            android:id="@+id/consent1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/consent1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/consent1text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/consent1"
+                            app:layout_constraintEnd_toEndOf="@+id/consent1"
+                            app:layout_constraintStart_toStartOf="@+id/consent1"
+                            app:layout_constraintTop_toTopOf="@+id/consent1" />
+
+                        <ImageButton
+                            android:id="@+id/consent2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/consent2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/consent1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/consent2text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/consent2"
+                            app:layout_constraintEnd_toEndOf="@+id/consent2"
+                            app:layout_constraintStart_toStartOf="@+id/consent2"
+                            app:layout_constraintTop_toTopOf="@+id/consent2" />
+
+                        <ImageButton
+                            android:id="@+id/notconsent"
+                            android:layout_width="200dp"
+                            android:layout_height="209dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/notconsent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/consent1" />
+
+                        <TextView
+                            android:id="@+id/notconsenttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/notconsent"
+                            app:layout_constraintEnd_toEndOf="@+id/notconsent"
+                            app:layout_constraintStart_toStartOf="@+id/notconsent"
+                            app:layout_constraintTop_toTopOf="@+id/notconsent" />
+
+                        <ImageButton
+                            android:id="@+id/consent3"
+                            android:layout_width="200dp"
+                            android:layout_height="209dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/consent3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/notconsent"
+                            app:layout_constraintTop_toBottomOf="@+id/consent2" />
+
+                        <TextView
+                            android:id="@+id/consent3text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/consent3"
+                            app:layout_constraintEnd_toEndOf="@+id/consent3"
+                            app:layout_constraintStart_toStartOf="@+id/consent3"
+                            app:layout_constraintTop_toTopOf="@+id/consent3" />
+
+                        <ImageButton
+                            android:id="@+id/notconsent2"
+                            android:layout_width="200dp"
+                            android:layout_height="209dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/notconsent2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/notconsent" />
+
+                        <TextView
+                            android:id="@+id/notconsent2text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/notconsent2"
+                            app:layout_constraintEnd_toEndOf="@+id/notconsent2"
+                            app:layout_constraintStart_toStartOf="@+id/notconsent2"
+                            app:layout_constraintTop_toTopOf="@+id/notconsent2" />
+
+
+                        <ImageButton
+                            android:id="@+id/notconsent3"
+                            android:layout_width="200dp"
+                            android:layout_height="209dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/notconsent3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/notconsent2"
+                            app:layout_constraintTop_toBottomOf="@+id/consent3" />
+
+                        <TextView
+                            android:id="@+id/notconsent3text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="30dp"
+                            android:visibility="invisible"
+                            app:layout_constraintBottom_toBottomOf="@+id/notconsent3"
+                            app:layout_constraintEnd_toEndOf="@+id/notconsent3"
+                            app:layout_constraintStart_toStartOf="@+id/notconsent3"
+                            app:layout_constraintTop_toTopOf="@+id/notconsent3" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/consenttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Correct! Consent is extremley important when participating in activites that can possibly overstep boundaries. Remember that anyone can be abusers, and unfortunately victims are more likley to have a personal connection with the assualter/abuser. Always look for suspicious behavior as well as suspicious people!"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/boundariessection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="All relationships have boundaries. In relationships, it's important that everyone has their boundaries are set and are clear to everyone.You should be mutually respectful, both feel safe, and be considerate of boundaries. Just because they are someone you trust does not mean they are allowed to make you feel uncomfortable. Which image represents an UNHEALTHY relationship?"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="20dp"
+                        android:gravity="center_horizontal"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                        <ImageButton
+                            android:id="@+id/notfriendbtn"
+                            android:layout_width="177dp"
+                            android:layout_height="181dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/touch"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/notfriendtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="30dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/notfriendbtn"
+                            app:layout_constraintEnd_toEndOf="@+id/notfriendbtn"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/notfriendbtn"
+                            android:visibility="invisible"/>
+
+
+                        <ImageButton
+                            android:id="@+id/friendbtn"
+                            android:layout_width="177dp"
+                            android:layout_height="181dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/friend"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/notfriendbtn"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/friendtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="30dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/friendbtn"
+                            app:layout_constraintEnd_toEndOf="@+id/friendbtn"
+                            app:layout_constraintStart_toStartOf="@+id/friendbtn"
+                            app:layout_constraintTop_toTopOf="@+id/friendbtn"
+                            android:visibility="invisible"/>
+
+                        <ImageButton
+                            android:id="@+id/lovebtn"
+                            android:layout_width="177dp"
+                            android:layout_height="181dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/good"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/notfriendbtn" />
+
+
+                        <TextView
+                            android:id="@+id/lovetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Wrong"
+                            android:textColor="#f72105"
+                            android:textSize="30dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/lovebtn"
+                            app:layout_constraintEnd_toEndOf="@+id/lovebtn"
+                            app:layout_constraintStart_toStartOf="@+id/lovebtn"
+                            app:layout_constraintTop_toBottomOf="@+id/notfriendbtn"
+                            android:visibility="invisible"/>
+
+
+                        <ImageButton
+                            android:id="@+id/notlovebtn"
+                            android:layout_width="177dp"
+                            android:layout_height="181dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/uhoh"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/lovebtn"
+                            app:layout_constraintTop_toBottomOf="@+id/friendbtn" />
+
+                        <TextView
+                            android:id="@+id/notlovetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:text="Right"
+                            android:textColor="#42f705"
+                            android:textSize="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/notlovebtn"
+                            app:layout_constraintStart_toStartOf="@+id/notlovebtn"
+                            app:layout_constraintTop_toBottomOf="@+id/friendbtn"
+                            android:visibility="invisible"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <TextView
+                        android:id="@+id/boundariestext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="That's correct! Just because you are in a relationship with anyone, friend, lover, parent, doesn't mean that you owe them anything you are uncomfortable with. If they keep pushing your boundaries, this is not a good reationship."
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+                        app:layout_constraintVertical_bias="0.0"
+                        android:visibility="invisible"/>
+
+                    <Button
+                        android:id="@+id/backbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/boundariestext"
+                        android:visibility="invisible"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GNEC</string>
+    <string name="title_activity_safe_spots">safeSpots</string>
+    <string name="my_map_api_key">AIzaSyD3DCWmeaMRTjdn_BOMlU1HHJbimwAqjA8</string>
+    <string name="my_places_api_key">AIzaSyC-Xi5-V8wCkXJbUqxT_H4XWI8yKXiPya0</string>
+</resources>
