@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Game_Home extends AppCompatActivity {
-    Button level1, level2, level3;
+    Button level1, level2, level3,home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,7 @@ public class Game_Home extends AppCompatActivity {
         level1=findViewById(R.id.button);
         level2=findViewById(R.id.button2);
         level3=findViewById(R.id.button3);
+        home=findViewById(R.id.button4);
 
         level1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +39,13 @@ public class Game_Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Game_Home.this, level3.class));
+            }
+        });
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Game_Home.this, Child_Home.class));
             }
         });
     }

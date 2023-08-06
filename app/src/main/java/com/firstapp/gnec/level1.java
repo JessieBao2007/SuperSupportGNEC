@@ -321,7 +321,7 @@ public class level1 extends AppCompatActivity {
         });
 
 
-        notlovetext.setOnClickListener(new View.OnClickListener() {
+        notlovebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 notlovetext.setVisibility(View.VISIBLE);
